@@ -1,5 +1,5 @@
 # MyAdventure
-An Amazon Alexa Adventure Game.  
+An Amazon Alexa Adventure Game.  https://www.amazon.com/dp/B072PZ2H4K
 
 This adventure game is build using the Alexa-SDK.  It allows the user to travel places, buy weapons at the store, and fight zombies.
 Not all of the responses are filled out as you buy more guns and travel around.
