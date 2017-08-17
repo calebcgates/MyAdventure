@@ -1,0 +1,1129 @@
+{
+  "intents": [
+    {
+      "name": "AMAZON.CancelIntent",
+      "samples": [
+        "cancel"
+      ]
+    },
+    {
+      "name": "AMAZON.HelpIntent",
+      "samples": [
+        "help"
+      ]
+    },
+    {
+      "name": "AMAZON.StopIntent",
+      "samples": [
+        "stop"
+      ]
+    },
+    {
+      "name": "attackIntent",
+      "samples": [
+        "smash",
+        "cut",
+        "stab",
+        "shoot",
+        "attack"
+      ],
+      "slots": []
+    },
+    {
+      "name": "availableLocationsIntent",
+      "samples": [
+        "where can I travel",
+        "where does the bus go",
+        "available locations",
+        "where can I go",
+        "locations",
+        "list locations"
+      ],
+      "slots": []
+    },
+    {
+      "name": "backpackIntent",
+      "samples": [
+        "open backpack",
+        "check backpack",
+        "open the backpack",
+        "open my backpack",
+        "backpack"
+      ],
+      "slots": []
+    },
+    {
+      "name": "busStopIntent",
+      "samples": [
+        "head to the bus stop",
+        "go to the bus stop",
+        "bus stop",
+        "go to bus stop",
+        "head to bus stop"
+      ],
+      "slots": []
+    },
+    {
+      "name": "buyIntent",
+      "samples": [
+        "purchase {weapon}",
+        "purchase a {weapon}",
+        "purchase the {weapon}",
+        "buy a {weapon}",
+        "buy {weapon}",
+        "buy the {weapon}"
+      ],
+      "slots": [
+        {
+          "name": "weapon",
+          "type": "weapons_list",
+          "samples": [
+            "purchase the {weapon}",
+            "purchase a {weapon}",
+            "purchase {weapon}",
+            "buy {weapon}",
+            "buy a {weapon}",
+            "buy the {weapon}"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "changeLocationIntent",
+      "samples": [
+        "get ticket for {location}",
+        "travel to {location}",
+        "go to {location}",
+        "go to the {location}"
+      ],
+      "slots": [
+        {
+          "name": "location",
+          "type": "locations_list",
+          "samples": [
+            "go to {location}",
+            "travel to {location}"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "eatIntent",
+      "samples": [
+        "consume the {food}",
+        "consume a {food}",
+        "consume {food}",
+        "eat the {food}",
+        "eat a {food}",
+        "eat an {food}",
+        "consume an {food}",
+        "eat {food}"
+      ],
+      "slots": [
+        {
+          "name": "food",
+          "type": "foods_list",
+          "samples": [
+            "eat the {food}",
+            "eat {food}",
+            "eat an {food}"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "examineIntent",
+      "samples": [
+        "examine the {object}",
+        "examine {object}",
+        "examine a {object}"
+      ],
+      "slots": [
+        {
+          "name": "object",
+          "type": "objects_list",
+          "samples": [
+            "the {object}",
+            "{object}",
+            "examine the {object}",
+            "examine {object}",
+            "examine a {object}"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fightIntent",
+      "samples": [
+        "attack a {foe}",
+        "attack an {foe}",
+        "stab {foe}",
+        "attack {foe}",
+        "attack the {foe}",
+        "fight the {foe}",
+        "fight {foe}",
+        "fight a {foe}",
+        "fight an {foe}",
+        "fight a zombie {foe}",
+        "fight the zombie {foe}",
+        "attack the zombie {foe}",
+        "attack a zombie {foe}",
+        "fight zombie {foe}",
+        "attack zombie {foe}"
+      ],
+      "slots": [
+        {
+          "name": "foe",
+          "type": "foes_list",
+          "samples": [
+            "fight the {foe}",
+            "fight {foe}"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "listEnemiesIntent",
+      "samples": [
+        "who can I fight",
+        "what enemies are there",
+        "list enemies",
+        "list all enemies",
+        "who's there to fight"
+      ],
+      "slots": []
+    },
+    {
+      "name": "loadGameIntent",
+      "samples": [
+        "load my game",
+        "load a game",
+        "load game",
+        "load the game"
+      ],
+      "slots": []
+    },
+    {
+      "name": "newGameIntent",
+      "samples": [
+        "new game",
+        "start a new game",
+        "start new game"
+      ],
+      "slots": []
+    },
+    {
+      "name": "noIntent",
+      "samples": [
+        "no",
+        "back"
+      ],
+      "slots": []
+    },
+    {
+      "name": "optionsIntent",
+      "samples": [
+        "what can i do",
+        "help",
+        "what are my options",
+        "options",
+        "tell me my options",
+        "say options"
+      ],
+      "slots": []
+    },
+    {
+      "name": "overviewIntent",
+      "samples": [
+        "overview"
+      ],
+      "slots": []
+    },
+    {
+      "name": "quoteEatIntent",
+      "samples": [
+        "eat the quote food name",
+        "eat the food name",
+        "eat quote food name",
+        "eat food name"
+      ],
+      "slots": []
+    },
+    {
+      "name": "quoteLocationIntent",
+      "samples": [
+        "go to quote location",
+        "go to quote location name",
+        "go to the quote location",
+        "go to the quote location name",
+        "go to the location name",
+        "go to the location",
+        "go to location"
+      ],
+      "slots": []
+    },
+    {
+      "name": "quoteTargetIntent",
+      "samples": [
+        "attack the quote target name",
+        "attack the quote target",
+        "attack quote target name",
+        "attack quote target",
+        "attack target",
+        "attack target name",
+        "attack the target name"
+      ],
+      "slots": []
+    },
+    {
+      "name": "quoteUnlockLocationIntent",
+      "samples": [
+        "unlock the quote location name",
+        "unlock the quote location",
+        "unlock the location",
+        "unlock the location name"
+      ],
+      "slots": []
+    },
+    {
+      "name": "quoteUnlockWeaponIntent",
+      "samples": [
+        "buy the weapon name",
+        "buy weapon name",
+        "buy quote weapon name",
+        "buy the quote weapon name",
+        "purchase the quote weapon name",
+        "purchase quote weapon name",
+        "purchase weapon name",
+        "purchase the weapon name"
+      ],
+      "slots": []
+    },
+    {
+      "name": "runIntent",
+      "samples": [
+        "flee",
+        "run away",
+        "run"
+      ],
+      "slots": []
+    },
+    {
+      "name": "saveGameIntent",
+      "samples": [
+        "save this game",
+        "save my game",
+        "save the game",
+        "save game"
+      ],
+      "slots": []
+    },
+    {
+      "name": "statusIntent",
+      "samples": [
+        "status update",
+        "stats",
+        "status",
+        "my status",
+        "my health",
+        "max health",
+        "what is my health",
+        "my stats",
+        "what are my stats",
+        "what is my status"
+      ],
+      "slots": []
+    },
+    {
+      "name": "storeInventoryIntent",
+      "samples": [
+        "what's for sale",
+        "what is for sale",
+        "what are you selling",
+        "what can I buy",
+        "what may I buy",
+        "what do you sell",
+        "what's on sale"
+      ],
+      "slots": []
+    },
+    {
+      "name": "suggestionIntent",
+      "samples": [
+        "suggestion",
+        "suggestions",
+        "tell me another suggestion",
+        "next suggestion"
+      ],
+      "slots": []
+    },
+    {
+      "name": "surroundingsIntent",
+      "samples": [
+        "describe my surroundings",
+        "surroundings",
+        "describe the location",
+        "describe this location",
+        "describe location",
+        "describe surroundings",
+        "what are the surroundings"
+      ],
+      "slots": []
+    },
+    {
+      "name": "unlockIntent",
+      "samples": [
+        "unlock the {location}",
+        "unlock {location}"
+      ],
+      "slots": [
+        {
+          "name": "location",
+          "type": "locations_list",
+          "samples": [
+            "{location}",
+            "unlock the {location}",
+            "unlock {location}"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "yesIntent",
+      "samples": [
+        "yes",
+        "ok",
+        "continue"
+      ],
+      "slots": []
+    }
+  ],
+  "types": [
+    {
+      "name": "foes_list",
+      "values": [
+        {
+          "id": null,
+          "name": {
+            "value": "kid",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "mom",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "lifeguard",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "shark",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "sand monster",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "dog",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "skateboarder",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "candy man",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "clown",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "monster squirrel",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "tourist",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "ticket salesman",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "knight",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "mummy",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "mammoth",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "janitor",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "nurse",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "doctor",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "surgeon",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "leper",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "store owner",
+            "synonyms": []
+          }
+        }
+      ]
+    },
+    {
+      "name": "foods_list",
+      "values": [
+        {
+          "id": null,
+          "name": {
+            "value": "granola bar",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "steak",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "peanuts",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "gummies",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "sandwich",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "apple",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "chicken parmesan",
+            "synonyms": []
+          }
+        }
+      ]
+    },
+    {
+      "name": "locations_list",
+      "values": [
+        {
+          "id": null,
+          "name": {
+            "value": "bus stop",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "hospital",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "museum",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "park",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "beach",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "store",
+            "synonyms": []
+          }
+        }
+      ]
+    },
+    {
+      "name": "objects_list",
+      "values": [
+        {
+          "id": null,
+          "name": {
+            "value": "can of beans",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "billboard",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "light pole",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "bus shelter",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "vending machine",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "used tools",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "tools",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "bargain tools",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "beans",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "bus",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "bricks",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "umbrella",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "lifeguard",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "guard shack",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "lifeguard stand",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "ocean",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "sand",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "water",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "view",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "sand castle",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "cooler",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "shovel",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "shells",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "waves",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "breeze",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "counter",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "floor",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "register",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "shelves",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "bathroom",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "exit sign",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "sidewalk",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "storm drain",
+            "synonyms": []
+          }
+        }
+      ]
+    },
+    {
+      "name": "weapons_list",
+      "values": [
+        {
+          "id": null,
+          "name": {
+            "value": "brick",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "baseball bat",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "crowbar",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "chainsaw",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "pistol",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "shotgun",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "sniper rifle",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "bazooka",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "grenade",
+            "synonyms": []
+          }
+        }
+      ]
+    }
+  ],
+  "prompts": [
+    {
+      "id": "Elicit.Intent-buyIntent.IntentSlot-weapon",
+      "promptVersion": "1.0",
+      "definitionVersion": "1.0",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "what weapon would you like to buy"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.Intent-changeLocationIntent.IntentSlot-location",
+      "promptVersion": "1.0",
+      "definitionVersion": "1.0",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "where would you like to go to"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.Intent-eatIntent.IntentSlot-food",
+      "promptVersion": "1.0",
+      "definitionVersion": "1.0",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "what would you like to eat"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.Intent-examineIntent.IntentSlot-object",
+      "promptVersion": "1.0",
+      "definitionVersion": "1.0",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "examine what"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.Intent-fightIntent.IntentSlot-foe",
+      "promptVersion": "1.0",
+      "definitionVersion": "1.0",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "who would you like to fight"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.Intent-unlockIntent.IntentSlot-location",
+      "promptVersion": "1.0",
+      "definitionVersion": "1.0",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "which location would you like to unlock"
+        }
+      ]
+    }
+  ],
+  "dialog": {
+    "version": "1.0",
+    "intents": [
+      {
+        "name": "buyIntent",
+        "confirmationRequired": false,
+        "prompts": {},
+        "slots": [
+          {
+            "name": "weapon",
+            "type": "weapons_list",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicit": "Elicit.Intent-buyIntent.IntentSlot-weapon"
+            }
+          }
+        ]
+      },
+      {
+        "name": "changeLocationIntent",
+        "confirmationRequired": false,
+        "prompts": {},
+        "slots": [
+          {
+            "name": "location",
+            "type": "locations_list",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicit": "Elicit.Intent-changeLocationIntent.IntentSlot-location"
+            }
+          }
+        ]
+      },
+      {
+        "name": "eatIntent",
+        "confirmationRequired": false,
+        "prompts": {},
+        "slots": [
+          {
+            "name": "food",
+            "type": "foods_list",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicit": "Elicit.Intent-eatIntent.IntentSlot-food"
+            }
+          }
+        ]
+      },
+      {
+        "name": "examineIntent",
+        "confirmationRequired": false,
+        "prompts": {},
+        "slots": [
+          {
+            "name": "object",
+            "type": "objects_list",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicit": "Elicit.Intent-examineIntent.IntentSlot-object"
+            }
+          }
+        ]
+      },
+      {
+        "name": "fightIntent",
+        "confirmationRequired": false,
+        "prompts": {},
+        "slots": [
+          {
+            "name": "foe",
+            "type": "foes_list",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicit": "Elicit.Intent-fightIntent.IntentSlot-foe"
+            }
+          }
+        ]
+      },
+      {
+        "name": "unlockIntent",
+        "confirmationRequired": false,
+        "prompts": {},
+        "slots": [
+          {
+            "name": "location",
+            "type": "locations_list",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicit": "Elicit.Intent-unlockIntent.IntentSlot-location"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
